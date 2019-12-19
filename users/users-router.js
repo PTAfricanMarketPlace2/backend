@@ -3,7 +3,7 @@ const router = require('express').Router();
 const Users = require('./users-model.js');
 const restricted = require('../auth/authenticate-middleware.js');
 
-router.get('/users', restricted, (req, res) => {
+router.get('/', restricted, (req, res) => {
   Users.getAll()
     .then(users => {
       res.json(users);
