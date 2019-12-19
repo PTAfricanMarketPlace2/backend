@@ -43,6 +43,24 @@ router.post('/login',(req, res) => {
     });
 });
 
+// PRODUCTS
+
+// router.post('/', (req, res) => {
+//   let user = req.body;
+//   const hash = bcrypt.hashSync(user.password, 10); 
+//   user.password = hash;
+
+//   Products.add(product)
+//     .then(saved => {
+//       res.status(201).json({ message: `Congratulations ${product.product-name},has now been added to the database.`});
+//     })
+//     .catch(error => {
+//       res.status(500).json(error);
+//     });
+// });
+
+
+
 
 
 function genToken(user) {

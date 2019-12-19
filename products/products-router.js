@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-const Products = require('./products-model.js');
+const Products = require('../products/products-model.js');
 const restricted = require('../auth/authenticate-middleware.js');
 
 router.get('/', restricted, (req, res) => {
@@ -13,5 +13,20 @@ router.get('/', restricted, (req, res) => {
     }
   )  
 });
+
+router.post('/', restricted,(req, res) => {
+  let product = req.body;
+
+  Products.add(product)
+  .then(saved => {
+    res.status(201).json({ message: `Congratulations ${product.product-name},has now been added to the database.`});
+  })
+  .catch(error => {
+    res.status(500).json(error);
+  });
+});
+
+
+
 
 module.exports = router;
