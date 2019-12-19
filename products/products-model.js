@@ -5,7 +5,8 @@ module.exports = {
     find,
     findBy,
     findById,
-    getAll
+    getAll, 
+    remove
   };
   
   function find() {
@@ -32,3 +33,8 @@ module.exports = {
     return db('products');
   }
   
+  function remove(id) {
+    return db('products')
+      .where({ id })
+      .del();
+  }

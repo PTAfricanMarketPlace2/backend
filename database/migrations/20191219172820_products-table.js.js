@@ -8,8 +8,13 @@ exports.up = function(knex) {
           .notNullable()
           .unique();
         products
-          .string('category',255)
-          .notNullable();
+          .integer('category_id')
+          .unsigned()
+          .notNullable()
+          .references('id')
+          .inTable('categories')
+          .onDelete('CASCADE')
+          .onUpdate('CASCADE');
         products
           .string('sub-category',255)
           .notNullable();

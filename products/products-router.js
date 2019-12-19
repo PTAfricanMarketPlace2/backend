@@ -18,13 +18,33 @@ router.post('/', restricted,(req, res) => {
   let product = req.body;
 
   Products.add(product)
-  .then(saved => {
-    res.status(201).json({ message: `Congratulations ${product.product-name},has now been added to the database.`});
+  .then(product => {
+    res.status(201).json(product);
   })
   .catch(error => {
     res.status(500).json(error);
   });
 });
+
+router.delete('/:id', (req, res) => {
+  Products.remove(req.params.id)
+  .then(count => {
+    if (count > 0) {
+      res.status(200).json({ message: 'The product has been removed' });
+    } else {
+      res.status(404).json({ message: 'The product could not be found' });
+    }
+  })
+  .catch(error => {
+    // log error to database
+    console.log(error);
+    res.status(500).json({
+      message: 'Error removing the product',
+    });
+  });
+});
+
+
 
 
 
