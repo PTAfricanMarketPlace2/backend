@@ -17,7 +17,6 @@ exports.up = function(knex) {
           .onUpdate('CASCADE');
         products
           .string('sub_category',255)
-          .notNullable();
         products
           .integer('user_id')
           .unsigned()

@@ -6,6 +6,7 @@ exports.up = function(knex) {
         categories
         .string('categoryName', 255)
         .unique()
+        .notNullable();
     })
   
 };

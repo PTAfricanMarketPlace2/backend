@@ -58,7 +58,7 @@ router.put('/:id', (req, res) => {
     // log error to database
     console.log(error);
     res.status(500).json({
-      message: 'Error updating the product',
+      message: 'Error updating the product.',
     });
   });
 });
