@@ -5,7 +5,8 @@ module.exports = {
   find,
   findBy,
   findById,
-  getAll
+  getAll, 
+  update
 };
 
 function find() {
@@ -30,5 +31,11 @@ function findById(id) {
 
 function getAll() {
   return db('users');
+}
+
+function update(id, changes) {
+  return db('users')
+    .where({ id })
+    .update(changes, '*');
 }
 

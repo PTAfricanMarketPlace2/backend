@@ -14,4 +14,41 @@ router.get('/', restricted, (req, res) => {
   )  
 });
 
+router.get('/:id',restricted, (req, res) => {
+  Users.findById(req.params.id)
+  .then(user => {
+    if (user) {
+      res.status(200).json(user);
+    } else {
+      res.status(404).json({ message: 'User not found' });
+    }
+  })
+  .catch(error => {
+    // log error to database
+    console.log(error);
+    res.status(500).json({
+      message: 'Error retrieving the user',
+    });
+  });
+});
+
+router.put('/:id',restricted, (req, res) => {
+  const changes = req.body;
+  Users.update(req.params.id, changes)
+  .then(user => {
+    if (user) {
+      res.status(200).json(user);
+    } else {
+      res.status(404).json({ message: 'The user could not be found' });
+    }
+  })
+  .catch(error => {
+    // log error to database
+    console.log(error);
+    res.status(500).json({
+      message: 'Error updating the user.',
+    });
+  });
+});
+
 module.exports = router;
