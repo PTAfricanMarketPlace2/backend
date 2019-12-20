@@ -16,7 +16,7 @@ exports.up = function(knex) {
           .onDelete('CASCADE')
           .onUpdate('CASCADE');
         products
-          .string('sub-category',255)
+          .string('sub_category',255)
           .notNullable();
         products
           .integer('user_id')
