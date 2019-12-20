@@ -8,6 +8,7 @@ exports.up = function(knex) {
       users.string('password', 255).notNullable();
       users.string('firstname').notNulllable();
       users.string('lastname').notNullable();
+      users.varchar('email').unique()
     }) 
 
   };
