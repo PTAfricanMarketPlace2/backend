@@ -14,6 +14,25 @@ router.get('/', restricted, (req, res) => {
   )  
 });
 
+
+router.get('/:id', (req, res) => {
+  Products.findById(req.params.id)
+  .then(product => {
+    if (product) {
+      res.status(200).json(product);
+    } else {
+      res.status(404).json({ message: 'Product not found' });
+    }
+  })
+  .catch(error => {
+    // log error to database
+    console.log(error);
+    res.status(500).json({
+      message: 'Error retrieving the product',
+    });
+  });
+})
+
 router.post('/', restricted,(req, res) => {
   let product = req.body;
 

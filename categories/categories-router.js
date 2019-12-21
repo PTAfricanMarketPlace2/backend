@@ -14,6 +14,24 @@ router.get('/', restricted, (req, res) => {
   )  
 });
 
+router.get('/:id', (req, res) => {
+  Categories.findById(req.params.id)
+  .then(category => {
+    if (category) {
+      res.status(200).json(category);
+    } else {
+      res.status(404).json({ message: 'Category not found' });
+    }
+  })
+  .catch(error => {
+    // log error to database
+    console.log(error);
+    res.status(500).json({
+      message: 'Error retrieving the category',
+    });
+  });
+})
+
 router.post('/', restricted,(req, res) => {
     let category = req.body;
   
