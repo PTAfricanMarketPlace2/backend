@@ -45,7 +45,7 @@ router.post('/', restricted,(req, res) => {
   });
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id',restricted, (req, res) => {
   Products.remove(req.params.id)
   .then(count => {
     if (count > 0) {

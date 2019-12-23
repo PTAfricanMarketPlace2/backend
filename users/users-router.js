@@ -32,7 +32,7 @@ router.get('/:id', (req, res) => {
   });
 });
 
-router.put('/:id', (req, res) => {
+router.put('/:id',restricted, (req, res) => {
   const changes = req.body;
   Users.update(req.params.id, changes)
   .then(user => {
@@ -51,7 +51,7 @@ router.put('/:id', (req, res) => {
   });
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', restricted,(req, res) => {
   Users.remove(req.params.id)
   .then(count => {
     if (count > 0) {
