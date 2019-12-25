@@ -1,5 +1,17 @@
 <h1>PT AfricanMarketPlace2 Backend</h1>
 
+<h2> The Pitch:
+<p> Sauti Africa empowers small business owners, particularly women, to improve their business and economic opportunities to grow out of poverty.
+
+The use of this app will:
+    + enable these users (business owners) to create a listing for items they have for sale.
+
+    + allow a user to log onto the site and see various categories to help them set their own prices.
+
+    + allow the user to make listings for what they want to sell, which can be seen by all users.
+
+    + allow the user to add a new item by selecting their makrket location and then typing in their item name, description and price.
+
 <h2> Backend Build Using: </h2>
 
 * Nodejs
@@ -23,7 +35,7 @@
     <h3> * Edit User </h3>
     <h3> * Edit Products </h3>
     <h3> * Add Product </h3>
-    <h3> * Delete Users </h3>
+    <h3> * Delete User </h3>
     <h3> * Delete Product </h3>
   
    
