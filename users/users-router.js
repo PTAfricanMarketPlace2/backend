@@ -70,13 +70,23 @@ router.delete('/:id', restricted,(req, res) => {
 });
 
 
-router.get('/:id/products',async (req,res) => {
-  try{
-      const {id} = req.params;
-      const products = await Users.findUserProducts(id)
-      res.status(200).json(products)
-  }catch(error) {
-      res.status(500).json({message:"Error finding user products"})
-  }
+// router.get('/:id/products',async (req,res) => {
+//   try{
+//       const {id} = req.params;
+//       const products = await Users.findUserProducts(id)
+//       res.status(200).json(products)
+//   }catch(error) {
+//       res.status(500).json({message:"Error finding user products"})
+//   }
+// })
+
+router.get('/:id/products', (req,res) => {
+  Users.findUserProducts(req.params.id)
+  .then(products => {
+    res.status(200).json(products)
+  })
+  .catch(error => {
+    res.status(500).json({message:"Error finding user products"})
+  })
 })
 module.exports = router;

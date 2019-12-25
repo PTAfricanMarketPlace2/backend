@@ -50,7 +50,7 @@ function remove(id) {
 function findUserProducts(userId) {
   return db('products as p')
   .join('users as u', 'p.user_id', 'u.id')
-  .select('p.id','p.productName','u.id','u.username' )
+  .select('u.id as UserId','u.username as Merchant','p.id as ProductId','p.productName as Product', 'p.price as Price', 'p.country as Country' )
   .where({user_id:userId})
 }
 
