@@ -4,7 +4,8 @@
 
 <h2> The Pitch:</h2>
 
-    * Sauti Africa empowers small business owners, particularly women, to improve their business and economic opportunities to grow out of poverty.
+    * Sauti Africa empowers small business owners, particularly women, to improve their business 
+        and economic opportunities to grow out of poverty.
 
     The use of this app will:
 
