@@ -1,8 +1,9 @@
 <h1>PT AfricanMarketPlace2 Backend</h1>
+<p>  Role: Backend Developer(Node)</p>
 
 ---------------------------------------------------------------
 
-<h2> The Pitch:</h2>
+<h2> Project Overview</h2>
 
     * Sauti Africa empowers small business owners, particularly women, to improve their business 
         and economic opportunities to grow out of poverty.
@@ -22,7 +23,7 @@
 
 ---------------------------------------------------------------
 
-<h2>Backend Developer(Node) Objectives:</h2>
+<h2> Objectives:</h2>
 
     * The API should provide the endpoints that the front end needs to complete client 
         requirements and demonstrate your proficiency in the skills you've learned so far.
@@ -34,7 +35,7 @@
 ---------------------------------------------------------------
 
 
-<h2> Backend Build Using: </h2>
+<h2> Backend Built Using: </h2>
 
     * Nodejs
     * Express
