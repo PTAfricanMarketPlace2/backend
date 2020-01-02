@@ -7,7 +7,8 @@ module.exports = {
   findById,
   getAll, 
   update, 
-  remove
+  remove, 
+  findUserProducts
 };
 
 function find() {
@@ -45,4 +46,12 @@ function remove(id) {
     .where({ id })
     .del();
 }
+
+function findUserProducts(userId) {
+  return db('products as p')
+  .join('users as u', 'p.user_id', 'u.id')
+  .select('u.id as UserId','u.username as Merchant','p.id as ProductId','p.productName as Product', 'p.price as Price', 'p.country as Country' )
+  .where({user_id:userId})
+}
+
 

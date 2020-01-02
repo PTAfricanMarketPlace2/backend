@@ -8,11 +8,14 @@ module.exports = {
     getAll, 
     remove,
     update
+  
   };
   
   function find() {
-    return db('products').select('id', 'name');
+    return db('products').select('id', 'name').orderBy('productName');
   }
+
+
   
   function findBy(filter) {
     return db('products').where(filter);
