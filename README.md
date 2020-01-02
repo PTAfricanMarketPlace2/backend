@@ -48,9 +48,13 @@
 
 <h2> Routes: </h2>
     <h3> * Register </h3>
+        A POST request to this route will lead to a register page where users can register to join the African MarketPlace site to begin use
     <h3> * Login </h3>
+        A POST
     <h3> * Users List </h3>
+        A GET
     <h3> * Individual User </h3>
+    A GET
     <h3> * Products List </h3>
     <h3> * Individual Product </h3>
     <h3> * Categories List </h3>
