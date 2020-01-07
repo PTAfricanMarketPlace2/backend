@@ -64,5 +64,68 @@
     <h3> * Add Product </h3>
     <h3> * Delete User </h3>
     <h3> * Delete Product </h3>
+  --------------------------------------------------------------------
+
+  Heroku Git URL
+https://git.heroku.com/african-marketplace2.git
+
+------------------------------------------------------------------------
   
-   
+<h2>Users and their Login Information:
+
+[
+    {
+        "id": 1,
+        "username": "alicealdo",
+        "password": "password",
+        "firstname": "alice",
+        "lastname": "aldo",
+        "email": "aaldo@gmail.com",
+        "role": null
+    },
+    {
+        "id": 2,
+        "username": "benbobbins",
+        "password": "password",
+        "firstname": "ben",
+        "lastname": "bobbins",
+        "email": "bbobbins@gmail.com",
+        "role": null
+    },
+    {
+        "id": 3,
+        "username": "carolcolton",
+        "password": "password",
+        "firstname": "carol",
+        "lastname": "colton",
+        "email": "ccoltons@gmail.com",
+        "role": null
+    },
+    {
+        "id": 4,
+        "username": "dandavies",
+        "password": "password",
+        "firstname": "dan",
+        "lastname": "davies",
+        "email": "ddavies@gmail.com",
+        "role": null
+    },
+    {
+        "id": 5,
+        "username": "ericaeverest",
+        "password": "password",
+        "firstname": "erica",
+        "lastname": "everest",
+        "email": "eeverest@gmail.com",
+        "role": null
+    },
+    {
+        "id": 6,
+        "username": "frankfox",
+        "password": "password",
+        "firstname": "frank",
+        "lastname": "fox",
+        "email": "ffox@gmail.com",
+        "role": null
+    }
+]
