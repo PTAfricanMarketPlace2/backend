@@ -67,7 +67,7 @@
   --------------------------------------------------------------------
 
   Heroku Git URL
-https://git.heroku.com/african-marketplace2.git
+https://african-marketplace2.herokuapp.com/
 
 ------------------------------------------------------------------------
   
