@@ -64,5 +64,13 @@
     <h3> * Add Product </h3>
     <h3> * Delete User </h3>
     <h3> * Delete Product </h3>
-  
+  --------------------------------------------------------------------
+    'git remote -v' results:
+  https://github.com/PTAfricanMarketPlace2/backend.git (fetch)
+  https://github.com/PTAfricanMarketPlace2/backend.git (push)
+
+  ----------------------------------------------------------------------
+  'git remote show origin' results:
+  Fetch URL: https://github.com/PTAfricanMarketPlace2/backend.git
+  Push  URL: https://github.com/PTAfricanMarketPlace2/backend.git
    
