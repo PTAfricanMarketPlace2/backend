@@ -65,6 +65,11 @@
     <h3> * Delete User </h3>
     <h3> * Delete Product </h3>
   --------------------------------------------------------------------
+
+  Heroku Git URL
+https://git.heroku.com/african-marketplace2.git
+
+------------------------------------------------------------------------
   
 <h2>Users and their Login Information:
 
