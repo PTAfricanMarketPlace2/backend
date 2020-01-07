@@ -71,7 +71,7 @@ https://african-marketplace2.herokuapp.com/
 
 ------------------------------------------------------------------------
   
-<h2>Users and their Login Information:
+<h2>Users and their Login Information:</h2>
 
 [
     {
@@ -129,3 +129,4 @@ https://african-marketplace2.herokuapp.com/
         "role": null
     }
 ]
+
