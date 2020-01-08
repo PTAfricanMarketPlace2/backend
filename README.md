@@ -54,16 +54,25 @@
     <h3> * Users List </h3>
                  https://african-marketplace2.herokuapp.com/api/users
     <h3> * Individual User </h3>
-    A GET
+                https://african-marketplace2.herokuapp.com/api/users/:id
     <h3> * Products List </h3>
+                https://african-marketplace2.herokuapp.com/api/products
     <h3> * Individual Product </h3>
+                https://african-marketplace2.herokuapp.com/api/products/:id
     <h3> * Categories List </h3>
+                https://african-marketplace2.herokuapp.com/api/categories
     <h3> * User Products </h3>
+                https://african-marketplace2.herokuapp.com/api/users/:id/products
     <h3> * Edit User </h3>
+                https://african-marketplace2.herokuapp.com/api/users/:id
     <h3> * Edit Products </h3>
+                https://african-marketplace2.herokuapp.com/api/products/:id
     <h3> * Add Product </h3>
+                https://african-marketplace2.herokuapp.com/api/products
     <h3> * Delete User </h3>
+                https://african-marketplace2.herokuapp.com/api/users/:id
     <h3> * Delete Product </h3>
+                https://african-marketplace2.herokuapp.com/api/products/:id
   --------------------------------------------------------------------
 
   Heroku Git URL
