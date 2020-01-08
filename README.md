@@ -51,41 +51,72 @@
                  https://african-marketplace2.herokuapp.com/api/auth/register
             A POST request to this route will allow a new user to register for membership on the site.
              Required Fields:
-                username
-                password
-                firstname
-                lastname
+                username,
+                password,
+                firstname,
+                lastname,
                 email
                 role (Optional)
     <h3> * Login </h3>
                  https://african-marketplace2.herokuapp.com/api/auth/login
             A POST request to this route will allow a member to login onto the site.
               Required Fields:
-                username
+                username,
                 password
     <h3> * Users List </h3>
                  https://african-marketplace2.herokuapp.com/api/users
-            A GET request to this route will allow a member to get a list of all members
+            A GET request to this route will allow a logged in member to get a list of all members.
     <h3> * Individual User </h3>
                 https://african-marketplace2.herokuapp.com/api/users/:id
+            A GET request to this route will allow a logged in member to get information for a specific user based upon the id requested.
     <h3> * Products List </h3>
                 https://african-marketplace2.herokuapp.com/api/products
+            A GET request to this route will allow a logged in  member to get a list of all products listed on the site.
     <h3> * Individual Product </h3>
                 https://african-marketplace2.herokuapp.com/api/products/:id
+            A GET request to this route will allow a member to get information about a specific product based upon the id requested.
     <h3> * Categories List </h3>
                 https://african-marketplace2.herokuapp.com/api/categories
+            A GET request to this endpoint will allow a  logged in member to get a list of all inventory categories
     <h3> * User Products </h3>
                 https://african-marketplace2.herokuapp.com/api/users/:id/products
+            A GET request to this route will allow a member to get a list of all products that are being sold by a specific user based upon the id requested.
     <h3> * Edit User </h3>
                 https://african-marketplace2.herokuapp.com/api/users/:id
+            A PUT request to this route will allow a logged in member to edit their user information.
+                 Required Fields:
+                    username,
+                    password,
+                    firstname,
+                    lastname,
+                    email
+                    role (Optional)
     <h3> * Edit Products </h3>
                 https://african-marketplace2.herokuapp.com/api/products/:id
+            A PUT request to this route wiil allow a logged in member to edit information for the specific product based upon the id requested.
+                Required Fields:
+                    productName,
+                    category_id,
+                    sub_category(Optional),
+                    user_id,
+                    price,
+                    country
     <h3> * Add Product </h3>
                 https://african-marketplace2.herokuapp.com/api/products
+            A POST request to this route will allow a logged in user to add a product to their inventory.
+             Required Fields:
+                productName,
+                    category_id,
+                    sub_category(Optional),
+                    user_id,
+                    price,
+                    country
     <h3> * Delete User </h3>
                 https://african-marketplace2.herokuapp.com/api/users/:id
+            A DELETE request to this route will allow a logged in user to delete the specific user based upon the id request.
     <h3> * Delete Product </h3>
                 https://african-marketplace2.herokuapp.com/api/products/:id
+             A DELETE request to this route will allow a logged in user to delete the specific product based upon the id request.
   --------------------------------------------------------------------
 
   Heroku Git URL
