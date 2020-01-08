@@ -49,6 +49,7 @@
 <h2> Routes: </h2>
     <h3> * Register </h3>
                  https://african-marketplace2.herokuapp.com/api/auth/register
+
             A POST request to this route will allow a new user to register for membership on the site.
              Required Fields:
                 username
@@ -59,12 +60,14 @@
                 role (Optional)
     <h3> * Login </h3>
                  https://african-marketplace2.herokuapp.com/api/auth/login
+
             A POST request to this route will allow a member to login onto the site.
               Required Fields:
                 username
                 password
     <h3> * Users List </h3>
                  https://african-marketplace2.herokuapp.com/api/users
+                 
             A GET request to this route will allow a member to get a list of all members
     <h3> * Individual User </h3>
                 https://african-marketplace2.herokuapp.com/api/users/:id
