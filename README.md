@@ -48,22 +48,31 @@
 
 <h2> Routes: </h2>
     <h3> * Register </h3>
-        A POST request to this route will lead to a register page where users can register to join the African MarketPlace site to begin use
+                 https://african-marketplace2.herokuapp.com/api/auth/register
     <h3> * Login </h3>
-        A POST
+                 https://african-marketplace2.herokuapp.com/api/auth/login
     <h3> * Users List </h3>
-        A GET
+                 https://african-marketplace2.herokuapp.com/api/users
     <h3> * Individual User </h3>
-    A GET
+                https://african-marketplace2.herokuapp.com/api/users/:id
     <h3> * Products List </h3>
+                https://african-marketplace2.herokuapp.com/api/products
     <h3> * Individual Product </h3>
+                https://african-marketplace2.herokuapp.com/api/products/:id
     <h3> * Categories List </h3>
+                https://african-marketplace2.herokuapp.com/api/categories
     <h3> * User Products </h3>
+                https://african-marketplace2.herokuapp.com/api/users/:id/products
     <h3> * Edit User </h3>
+                https://african-marketplace2.herokuapp.com/api/users/:id
     <h3> * Edit Products </h3>
+                https://african-marketplace2.herokuapp.com/api/products/:id
     <h3> * Add Product </h3>
+                https://african-marketplace2.herokuapp.com/api/products
     <h3> * Delete User </h3>
+                https://african-marketplace2.herokuapp.com/api/users/:id
     <h3> * Delete Product </h3>
+                https://african-marketplace2.herokuapp.com/api/products/:id
   --------------------------------------------------------------------
 
   Heroku Git URL
@@ -73,8 +82,6 @@ https://african-marketplace2.herokuapp.com/
   
 <h2>Users and their Login Information:</h2>
 
-[
-    {
         "id": 1,
         "username": "alicealdo",
         "password": "password",
@@ -82,8 +89,7 @@ https://african-marketplace2.herokuapp.com/
         "lastname": "aldo",
         "email": "aaldo@gmail.com",
         "role": null
-    },
-    {
+    
         "id": 2,
         "username": "benbobbins",
         "password": "password",
@@ -91,17 +97,14 @@ https://african-marketplace2.herokuapp.com/
         "lastname": "bobbins",
         "email": "bbobbins@gmail.com",
         "role": null
-    },
-    {
-        "id": 3,
+      "id": 3,
         "username": "carolcolton",
         "password": "password",
         "firstname": "carol",
         "lastname": "colton",
         "email": "ccoltons@gmail.com",
         "role": null
-    },
-    {
+    
         "id": 4,
         "username": "dandavies",
         "password": "password",
@@ -109,8 +112,7 @@ https://african-marketplace2.herokuapp.com/
         "lastname": "davies",
         "email": "ddavies@gmail.com",
         "role": null
-    },
-    {
+    
         "id": 5,
         "username": "ericaeverest",
         "password": "password",
@@ -118,8 +120,7 @@ https://african-marketplace2.herokuapp.com/
         "lastname": "everest",
         "email": "eeverest@gmail.com",
         "role": null
-    },
-    {
+    
         "id": 6,
         "username": "frankfox",
         "password": "password",
@@ -127,6 +128,4 @@ https://african-marketplace2.herokuapp.com/
         "lastname": "fox",
         "email": "ffox@gmail.com",
         "role": null
-    }
-]
 
