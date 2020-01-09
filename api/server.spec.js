@@ -28,5 +28,10 @@ describe('GET/', () => {
         const res = await request(server).get('/')
             expect(res.type).toBe('application/json');
     })
+
+    it('should return the correct object', async() => {
+        const res = await request(server).get('/')
+        expect(res.body).toEqual({api: "Up and running"})
+    })
 })
 })
