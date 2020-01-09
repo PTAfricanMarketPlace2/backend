@@ -14,7 +14,7 @@ router.get('/', restricted, (req, res) => {
   )  
 });
 
-router.get('/:id', (req, res) => {
+router.get('/:id',restricted, (req, res) => {
   Users.findById(req.params.id)
   .then(user => {
     if (user) {
@@ -80,7 +80,7 @@ router.delete('/:id', restricted,(req, res) => {
 //   }
 // })
 
-router.get('/:id/products', (req,res) => {
+router.get('/:id/products', restricted,(req,res) => {
   Users.findUserProducts(req.params.id)
   .then(products => {
     res.status(200).json(products)

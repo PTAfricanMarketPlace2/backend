@@ -14,7 +14,7 @@ router.get('/', restricted, (req, res) => {
   )  
 });
 
-router.get('/:id', (req, res) => {
+router.get('/:id',restricted, (req, res) => {
   Categories.findById(req.params.id)
   .then(category => {
     if (category) {
