@@ -15,7 +15,7 @@ router.get('/', restricted, (req, res) => {
 });
 
 
-router.get('/:id', (req, res) => {
+router.get('/:id',restricted, (req, res) => {
   Products.findById(req.params.id)
   .then(product => {
     if (product) {
@@ -63,7 +63,7 @@ router.delete('/:id',restricted, (req, res) => {
   });
 });
 
-router.put('/:id', (req, res) => {
+router.put('/:id', restricted,(req, res) => {
   const changes = req.body;
   Products.update(req.params.id, changes)
   .then(product => {
