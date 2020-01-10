@@ -5,7 +5,7 @@ describe('categories-model', () => {
     describe('find', () => {
         it('should find all categories in the db', async () => {
             const categories = await db('categories')
-            expect(categories).toHaveLength(11)
+            expect(categories).toHaveLength(6)
         })
     })
     
