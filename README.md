@@ -126,7 +126,7 @@ https://african-marketplace2.herokuapp.com/
   
 <h2>Users and their Login Information:</h2>
 
-        "id": 1,
+        "id": 7,
         "username": "alicealdo",
         "password": "password",
         "firstname": "alice",
@@ -134,14 +134,15 @@ https://african-marketplace2.herokuapp.com/
         "email": "aaldo@gmail.com",
         "role": null
     
-        "id": 2,
+        "id": 8,
         "username": "benbobbins",
         "password": "password",
         "firstname": "ben",
         "lastname": "bobbins",
         "email": "bbobbins@gmail.com",
         "role": null
-      "id": 3,
+
+       "id": 9,
         "username": "carolcolton",
         "password": "password",
         "firstname": "carol",
@@ -149,7 +150,7 @@ https://african-marketplace2.herokuapp.com/
         "email": "ccoltons@gmail.com",
         "role": null
     
-        "id": 4,
+        "id": 10,
         "username": "dandavies",
         "password": "password",
         "firstname": "dan",
@@ -157,7 +158,7 @@ https://african-marketplace2.herokuapp.com/
         "email": "ddavies@gmail.com",
         "role": null
     
-        "id": 5,
+        "id": 11,
         "username": "ericaeverest",
         "password": "password",
         "firstname": "erica",
@@ -165,11 +166,83 @@ https://african-marketplace2.herokuapp.com/
         "email": "eeverest@gmail.com",
         "role": null
     
-        "id": 6,
+        "id": 12,
         "username": "frankfox",
         "password": "password",
         "firstname": "frank",
         "lastname": "fox",
         "email": "ffox@gmail.com",
         "role": null
+--------------------------------------------------------------------------------
 
+<h2>Categories </h2>
+
+        "id": 1,
+        "categoryName": "animal products"
+   
+        "id": 2,
+        "categoryName": "cereals"
+    
+        "id": 3,
+        "categoryName": "fruits"
+   
+        "id": 4,
+        "categoryName": "vegetables"
+   
+        "id": 5,
+        "categoryName": "seeds and nuts"
+    
+        "id": 6,
+        "categoryName": "other"
+ 
+ ----------------------------------------------------------------------------
+ <h2> Products </h2>
+
+        "id": 5,
+        "productName": "chicken eggs",
+        "category_id": 1,
+        "sub_category": null,
+        "user_id": 7,
+        "price": "$0.25 each",
+        "country": "ken"
+   
+        "id": 6,
+        "productName": "wheat",
+        "category_id": 2,
+        "sub_category": null,
+        "user_id": 8,
+        "price": "$1.25/lb.",
+        "country": "rwa"
+    
+        "id": 7,
+        "productName": "limes",
+        "category_id": 3,
+        "sub_category": null,
+        "user_id": 9,
+        "price": "$0.75 each",
+        "country": "uga"
+   
+        "id": 8,
+        "productName": "onions",
+        "category_id": 4,
+        "sub_category": null,
+        "user_id": 10,
+        "price": "$0.45 each",
+        "country": "ken"
+    
+        "id": 9,
+        "productName": "groundnuts",
+        "category_id": 5,
+        "sub_category": null,
+        "user_id": 11,
+        "price": "$1.00/lb.",
+        "country": "rwa"
+   
+        "id": 10,
+        "productName": "tobacco",
+        "category_id": 6,
+        "sub_category": null,
+        "user_id": 12,
+        "price": "$3.00/lb.",
+        "country": "uga"
+ 
