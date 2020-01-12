@@ -26,6 +26,13 @@ exports.up = function(knex) {
           .onDelete('CASCADE')
           .onUpdate('CASCADE');
         products
+          .string('username')
+          .notNullable()
+          .references('id')
+          .inTable('users')
+          .onDelete('CASCADE')
+          .onUpdate('CASCADE');
+        products
           .varchar('price')
           .notNullable();
         products
