@@ -82,6 +82,18 @@ router.put('/:id', restricted,(req, res) => {
   });
 });
 
+router.post('/:id/username', restricted,(req, res) => {
+  let product = req.body;
+
+  Products.add(product)
+  .then(product => {
+    res.status(201).json(product);
+  })
+  .catch(error => {
+    res.status(500).json(error);
+  });
+});
+
 
 
 

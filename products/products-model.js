@@ -7,7 +7,8 @@ module.exports = {
     findById,
     getAll, 
     remove,
-    update
+    update,
+    findByUsername
   
   };
   
@@ -32,6 +33,7 @@ module.exports = {
       .where({ id })
       .first();
   }
+
   
   function getAll() {
     return db('products');
@@ -47,4 +49,10 @@ module.exports = {
     return db('products')
       .where({ id })
       .update(changes, '*');
+  }
+
+  function findByUsername(username) {
+    return db('products')
+    .where ({username})
+    .first()
   }
